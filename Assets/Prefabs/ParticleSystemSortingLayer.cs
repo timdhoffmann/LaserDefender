@@ -7,7 +7,7 @@ public class ParticleSystemSortingLayer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		particleSystem.renderer.sortingLayerID = sortingLayerID;
-		particleSystem.renderer.sortingOrder = sortingLayerOrder;
+		GetComponent<ParticleSystem>().GetComponent<Renderer>().sortingLayerID = sortingLayerID;
+		GetComponent<ParticleSystem>().GetComponent<Renderer>().sortingOrder = sortingLayerOrder;
 	}
 }

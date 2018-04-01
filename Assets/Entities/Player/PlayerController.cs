@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour {
 		Vector3 laserPosition = transform.position + new Vector3(-0.17f, 0.18f, 0.1f);
 		GameObject laser = Instantiate(laserPrefab, laserPosition, Quaternion.identity) as GameObject;
 		// Add speed to projectile.
-		laser.rigidbody2D.velocity = new Vector3 (0f, projectileSpeed, 0f);
+		laser.GetComponent<Rigidbody2D>().velocity = new Vector3 (0f, projectileSpeed, 0f);
 		AudioSource.PlayClipAtPoint (shotSound, transform.position);
 	}
 

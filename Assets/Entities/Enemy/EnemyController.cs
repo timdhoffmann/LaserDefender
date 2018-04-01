@@ -50,7 +50,7 @@ public class EnemyController : MonoBehaviour {
 		// Instantiate LaserPrefab.
 		GameObject laser = Instantiate(laserPrefab, transform.position, Quaternion.AngleAxis (180f, Vector3.forward)) as GameObject;
 		// Add speed to projectile.
-		laser.rigidbody2D.velocity = new Vector2 (0f, - projectileSpeed);
+		laser.GetComponent<Rigidbody2D>().velocity = new Vector2 (0f, - projectileSpeed);
 		AudioSource.PlayClipAtPoint (shotSound, transform.position);
 	}
 }
