@@ -55,6 +55,4 @@ ehthumbs.db
 # Custom #
 # ======= #
 /Assets/VSCode*
-/.consulo/
-/Assets/_Plugins/
-/UnityPackageManager/
+/Assets/Standard Assets/
